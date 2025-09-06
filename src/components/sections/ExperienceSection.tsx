@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heading, ExperienceCard, Link } from '../ui';
+import { Heading, ExperienceCard } from '../ui';
 import { usePortfolioData } from '../../hooks';
 
 export const ExperienceSection: React.FC = () => {
@@ -27,18 +27,6 @@ export const ExperienceSection: React.FC = () => {
               )}
             </div>
           ))}
-        </div>
-
-        {/* View full resume link */}
-        <div className="mt-12 text-center">
-          <Link
-            href="/resume.pdf"
-            external
-            variant="underline"
-            className="inline-flex items-center font-medium"
-          >
-            View Full Résumé
-          </Link>
         </div>
       </div>
     </section>
