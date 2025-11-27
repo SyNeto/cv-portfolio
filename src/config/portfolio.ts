@@ -5,7 +5,7 @@ export const portfolioConfig = {
   // Personal Information
   personal: {
     name: 'Ernesto Jiménez Villaseñor',
-    title: 'I build things for the web',
+    title: 'I build software that solves complex problems',
     greeting: 'Hi, my name is',
     description:
       'Tech Lead with 11+ years of software development experience, the last 5 focused on technical leadership. Specialized in microservices architecture, e-commerce platforms, and full-stack development. Based in Mexico City.',
