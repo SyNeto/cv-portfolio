@@ -4,6 +4,7 @@ import {
   useSmoothScroll,
   usePortfolioData,
 } from '../../hooks';
+import { portfolioConfig } from '../../config/portfolio';
 
 interface HeaderProps {
   className?: string;
@@ -60,6 +61,13 @@ export const Header: React.FC<HeaderProps> = ({ className = '' }) => {
                 {label}
               </a>
             ))}
+            <a
+              href={portfolioConfig.social.email.url}
+              className="text-gray-700 hover:text-gray-900 transition-colors duration-200 font-medium focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-opacity-50 rounded px-2 py-1"
+              aria-label="Send email"
+            >
+              ernesto@ernjv.me
+            </a>
           </nav>
         </div>
       </div>
