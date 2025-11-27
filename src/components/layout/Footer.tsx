@@ -1,5 +1,6 @@
 import React from 'react';
 import { usePortfolioData } from '../../hooks';
+import { SocialLinks } from '../ui';
 
 interface FooterProps {
   className?: string;
@@ -11,6 +12,13 @@ export const Footer: React.FC<FooterProps> = ({ className = '' }) => {
   return (
     <footer className={`py-12 mt-24 border-t border-gray-200 ${className}`}>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 xl:pr-24">
+        {/* Social Links - Only visible on mobile/tablet (hidden on xl+) */}
+        <SocialLinks
+          direction="horizontal"
+          iconSize="lg"
+          className="justify-center mb-8 xl:hidden"
+        />
+
         <div className="text-center">
           <p className="text-sm text-gray-500">
             Built with{' '}
