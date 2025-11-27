@@ -8,7 +8,7 @@ export const portfolioConfig = {
     title: 'I build things for the web',
     greeting: 'Hi, my name is',
     description:
-      "I'm a software engineer specializing in building exceptional digital experiences. Currently, I'm focused on building accessible, human-centered products with modern technologies.",
+      'Tech Lead with 11+ years of software development experience, the last 5 focused on technical leadership. Specialized in microservices architecture, e-commerce platforms, and full-stack development. Based in Mexico City.',
   },
 
   // Navigation Configuration
@@ -20,15 +20,15 @@ export const portfolioConfig = {
   // Social Media Links
   social: {
     github: {
-      url: 'https://github.com/syneto',
+      url: 'https://github.com/SyNeto',
       label: 'GitHub',
     },
     linkedin: {
-      url: 'https://linkedin.com/in/ernesto-jimenez',
+      url: 'https://www.linkedin.com/in/ernesto-jim%C3%A9nez-villase%C3%B1or',
       label: 'LinkedIn',
     },
     email: {
-      url: 'mailto:ernesto@example.com',
+      url: 'mailto:ernesto@ernjv.me',
       label: 'Email',
     },
   },
@@ -36,9 +36,9 @@ export const portfolioConfig = {
   // About Section Data
   about: {
     description: [
-      "Hello! I'm Ernesto, a software engineer passionate about creating digital experiences that make a difference. My journey in software development started several years ago, and I've been fortunate to work on a variety of interesting projects.",
-      "I enjoy working across the full stack, from crafting intuitive user interfaces to designing robust backend systems. I'm always eager to learn new technologies and tackle challenging problems.",
-      "When I'm not coding, you can find me exploring new technologies, contributing to open source projects, or enjoying a good cup of coffee while reading about the latest developments in tech.",
+      "Hello! I'm Ernesto, a software engineer with over 11 years of professional experience building systems that actually work in production. My journey started back in 2008 as a freelancer, and since then I've gone from writing my first lines of code to leading engineering teams and architecting migrations from monolithic systems to microservices.",
+      "I've spent most of my career working across the full stack, but what really drives me is solving complex problems: whether that's migrating an e-commerce platform to a new architecture, designing systems that need to scale, or figuring out why that one service keeps failing at 3 AM. I care about code that's maintainable, systems that are observable, and teams that ship.",
+      "Outside of work, I'm an open source and open hardware enthusiast. I maintain a small electronics workshop at home where I restore 1980s computers, mostly Commodore 64s and their variants. I also experiment with IoT projects and embedded systems. There's something satisfying about debugging a 40-year-old machine that reminds me why I got into this field in the first place.",
     ],
     technologies: [
       'JavaScript',
@@ -46,6 +46,8 @@ export const portfolioConfig = {
       'React',
       'Node.js',
       'Python',
+      'Django',
+      'FastAPI',
       'PostgreSQL',
       'MongoDB',
       'AWS',
@@ -59,82 +61,68 @@ export const portfolioConfig = {
   // Experience Data
   experiences: [
     {
-      id: 'experience-3',
-      dateRange: '2023 — Present',
-      company: 'TechScale Solutions',
-      role: 'Senior Product Tech Lead',
-      location: 'Remote',
-      companyUrl: 'https://techscale.com',
+      id: 'experience-galileo',
+      dateRange: '2022 — 2025',
+      company: 'Galileo',
+      role: 'Tech Lead',
+      location: 'Mexico City',
       description:
-        'Leading cross-functional product development teams to deliver high-impact features for enterprise SaaS platform serving 50K+ users.',
+        'Led multiple squads across e-commerce platforms serving 4 business units, driving architectural migrations and platform scaling.',
       highlights: [
-        'Architected microservices migration reducing system latency by 40%',
-        'Led team of 8 engineers across frontend, backend, and DevOps',
-        'Implemented data-driven product decisions increasing user retention by 25%',
-        'Established CI/CD pipeline reducing deployment time from hours to minutes',
+        'Ecommerce Squad (2024-2025): Led checkout redesign and product configuration flows for 4 business units',
+        'New Markets Squad (2023-2024): Migrated e-commerce from Odoo to Commercetools, launched Colombia platform',
+        'Customer Experience Squad (2022-2023): Migrated user accounts to Keycloak, built microservices for scheduling and tracking',
       ],
       technologies: [
-        'TypeScript',
         'React',
-        'Node.js',
-        'PostgreSQL',
-        'AWS',
-        'Docker',
-        'Kubernetes',
-        'GraphQL',
-      ],
-    },
-    {
-      id: 'experience-2',
-      dateRange: '2021 — 2023',
-      company: 'StartupVenture Inc',
-      role: 'Full Stack Developer',
-      location: 'San Francisco, CA',
-      companyUrl: 'https://startupventure.com',
-      description:
-        'Built and scaled early-stage fintech platform from MVP to Series A, handling everything from user authentication to payment processing.',
-      highlights: [
-        'Developed real-time trading dashboard processing 10K+ transactions daily',
-        'Implemented secure payment gateway with PCI DSS compliance',
-        'Built responsive web application supporting mobile-first user base',
-        'Optimized database queries improving application performance by 60%',
-      ],
-      technologies: [
-        'JavaScript',
-        'Vue.js',
-        'Python',
-        'Django',
-        'Redis',
+        'FastAPI',
+        'Commercetools',
+        'Keycloak',
         'MongoDB',
-        'Stripe API',
-        'AWS Lambda',
+        'PostgreSQL',
       ],
     },
     {
-      id: 'experience-1',
-      dateRange: '2019 — 2021',
-      company: 'Digital Agency Pro',
-      role: 'Software Developer',
-      location: 'Austin, TX',
-      companyUrl: 'https://digitalagency.com',
+      id: 'experience-bedu-techlead',
+      dateRange: '2016 — 2022',
+      company: 'BEDU',
+      role: 'Tech Lead',
+      location: 'Mexico City',
       description:
-        'Delivered custom web applications for diverse client portfolio including e-commerce, healthcare, and education sectors.',
+        'Grew from Full Stack Developer to Tech Lead, driving the platform evolution from prototype to production-scale microservices architecture.',
       highlights: [
-        'Built 15+ responsive web applications using modern JavaScript frameworks',
-        'Collaborated directly with clients to gather requirements and deliver solutions',
-        'Mentored junior developers and established code review processes',
-        'Integrated third-party APIs and payment systems for e-commerce platforms',
+        'Tech Lead (2018-2022): Led monolith to microservices transformation, mentored teams in adopting new technologies',
+        'Full Stack Developer (2016-2018): Designed and built LMS platform from prototype to MVP',
       ],
-      technologies: [
-        'JavaScript',
-        'React',
-        'PHP',
-        'Laravel',
-        'MySQL',
-        'jQuery',
-        'Bootstrap',
-        'Git',
+      technologies: ['Django', 'FastAPI', 'MongoDB', 'PostgreSQL', 'Firestore'],
+    },
+    {
+      id: 'experience-bedu-expert',
+      dateRange: '2018 — 2020',
+      company: 'BEDU',
+      role: 'Expert (Teaching)',
+      location: 'Mexico City',
+      description:
+        'Technical instructor for full-stack development programs, running parallel to Tech Lead responsibilities.',
+      highlights: [
+        'Provided technical mentorship to ~200 students in full-stack development',
+        'Taught Full Stack JavaScript and Full Stack Python courses',
       ],
+      technologies: ['JavaScript', 'Python', 'Node.js', 'Django'],
+    },
+    {
+      id: 'experience-egocentra',
+      dateRange: '2014 — 2015',
+      company: 'Egocentra Advertising',
+      role: 'Full Stack Developer',
+      location: 'Mexico City',
+      description:
+        'Developed digital projects for major international brands and internal agency tools.',
+      highlights: [
+        "Developed projects for major brands (BMW, L'Oreal, Nestle)",
+        'Built internal agency solutions and tools',
+      ],
+      technologies: ['WordPress', 'Django', 'jQuery', 'AngularJS'],
     },
   ] as Experience[],
 
