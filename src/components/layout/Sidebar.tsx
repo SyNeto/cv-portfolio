@@ -31,34 +31,32 @@ export const Sidebar: React.FC<SidebarProps> = ({ className = '' }) => {
         role="complementary"
         aria-label="Secondary navigation and social links"
       >
-        <nav className="flex flex-col space-y-6" aria-label="Page sections">
+        <nav
+          className="flex flex-col space-y-6 items-center"
+          aria-label="Page sections"
+        >
           {/* Navigation Links */}
-          <div className="flex flex-col space-y-4">
+          <div className="flex flex-col space-y-2 items-center">
             {navigation.map(({ id, label }) => (
-              <div key={id} className="relative">
-                <a
-                  href={`#${id}`}
-                  onClick={(e) => handleNavClick(e, id)}
-                  className={`text-sm font-medium transition-all duration-200 py-2 block text-right focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-opacity-50 rounded px-2 ${
-                    activeSection === id
-                      ? 'text-blue-600 font-semibold'
-                      : 'text-gray-600 hover:text-gray-900'
-                  }`}
-                  aria-current={activeSection === id ? 'page' : undefined}
-                  aria-label={`Navigate to ${label} section`}
-                >
-                  {label}
-                </a>
-                {/* Active indicator */}
-                {activeSection === id && (
-                  <div className="absolute right-0 top-1/2 -translate-y-1/2 w-2 h-2 bg-blue-600 rounded-full -mr-6"></div>
-                )}
-              </div>
+              <a
+                key={id}
+                href={`#${id}`}
+                onClick={(e) => handleNavClick(e, id)}
+                className={`text-sm font-medium transition-all duration-200 py-1.5 px-3 block text-center focus:outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-50 rounded-full ${
+                  activeSection === id
+                    ? 'text-accent bg-accent/10 font-semibold'
+                    : 'text-text-secondary hover:text-text-primary hover:bg-hover'
+                }`}
+                aria-current={activeSection === id ? 'page' : undefined}
+                aria-label={`Navigate to ${label} section`}
+              >
+                {label}
+              </a>
             ))}
           </div>
 
           {/* Separator */}
-          <div className="w-6 h-px bg-gray-300 mx-auto"></div>
+          <div className="w-6 h-px bg-border"></div>
 
           {/* Social Links */}
           <SocialLinks direction="vertical" iconSize="sm" />

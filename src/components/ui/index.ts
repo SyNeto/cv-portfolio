@@ -7,3 +7,4 @@ export { default as Badge } from './Badge';
 export { default as Container } from './Container';
 export { default as ExperienceCard } from './ExperienceCard';
 export { default as SocialLinks } from './SocialLinks';
+export { ThemeToggle } from './ThemeToggle';

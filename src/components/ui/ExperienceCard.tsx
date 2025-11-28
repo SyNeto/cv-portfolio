@@ -24,7 +24,7 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
 
   return (
     <div
-      className={`group relative transition-all duration-300 hover:bg-gray-50/50 rounded-lg p-6 -m-6 ${className}`}
+      className={`group relative transition-all duration-300 hover:bg-hover rounded-lg p-6 -m-6 ${className}`}
     >
       <div className="flex flex-col lg:flex-row lg:gap-6">
         {/* Date Range */}
@@ -44,12 +44,12 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
                   href={companyUrl}
                   external
                   variant="default"
-                  className="hover:text-blue-600"
+                  className="hover:text-accent"
                 >
                   {company}
                 </Link>
               ) : (
-                <span className="text-gray-900">{company}</span>
+                <span className="text-text-primary">{company}</span>
               )}
             </Heading>
             {location && (
@@ -86,7 +86,7 @@ export const ExperienceCard: React.FC<ExperienceCardProps> = ({
       </div>
 
       {/* Subtle hover indicator */}
-      <div className="absolute left-0 top-6 w-1 h-12 bg-gray-300 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-r"></div>
+      <div className="absolute left-0 top-6 w-1 h-12 bg-border opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-r"></div>
     </div>
   );
 };

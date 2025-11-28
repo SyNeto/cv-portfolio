@@ -1,1 +1,63 @@
 @import 'tailwindcss';
+
+/* Theme CSS Variables - Semantic color system */
+:root {
+  /* Surface colors */
+  --color-surface: #ffffff;
+  --color-surface-secondary: #f8fafc;
+  --color-surface-elevated: rgba(255, 255, 255, 0.8);
+
+  /* Text colors */
+  --color-text-primary: #111827;
+  --color-text-secondary: #4b5563;
+  --color-text-muted: #6b7280;
+
+  /* Border colors */
+  --color-border: #e5e7eb;
+  --color-border-light: #f3f4f6;
+
+  /* Accent colors */
+  --color-accent: #2563eb;
+  --color-accent-hover: #1d4ed8;
+
+  /* Interactive states */
+  --color-hover: #f3f4f6;
+}
+
+.dark {
+  /* Surface colors */
+  --color-surface: #0f172a;
+  --color-surface-secondary: #1e293b;
+  --color-surface-elevated: rgba(15, 23, 42, 0.8);
+
+  /* Text colors */
+  --color-text-primary: #f1f5f9;
+  --color-text-secondary: #94a3b8;
+  --color-text-muted: #64748b;
+
+  /* Border colors */
+  --color-border: #334155;
+  --color-border-light: #1e293b;
+
+  /* Accent colors */
+  --color-accent: #60a5fa;
+  --color-accent-hover: #93c5fd;
+
+  /* Interactive states */
+  --color-hover: #1e293b;
+}
+
+/* Tailwind v4 theme extension */
+@theme {
+  --color-surface: var(--color-surface);
+  --color-surface-secondary: var(--color-surface-secondary);
+  --color-surface-elevated: var(--color-surface-elevated);
+  --color-text-primary: var(--color-text-primary);
+  --color-text-secondary: var(--color-text-secondary);
+  --color-text-muted: var(--color-text-muted);
+  --color-border: var(--color-border);
+  --color-border-light: var(--color-border-light);
+  --color-accent: var(--color-accent);
+  --color-accent-hover: var(--color-accent-hover);
+  --color-hover: var(--color-hover);
+}

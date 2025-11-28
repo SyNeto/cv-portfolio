@@ -26,7 +26,7 @@ export const HeroSection: React.FC = () => {
           <Heading as="h1" size="xl" className="mb-4">
             {personal.name}
           </Heading>
-          <Heading as="h2" size="lg" className="text-gray-600 mb-6">
+          <Heading as="h2" size="lg" className="text-text-secondary mb-6">
             {personal.title}
           </Heading>
         </div>
@@ -40,7 +40,7 @@ export const HeroSection: React.FC = () => {
       <div className="absolute bottom-16 sm:bottom-16 lg:bottom-20 left-1/2 transform -translate-x-1/2">
         <button
           onClick={handleScrollToNext}
-          className="p-3 text-gray-400 hover:text-gray-600 transition-all duration-300 hover:translate-y-1 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-opacity-50 rounded-full"
+          className="p-3 text-text-muted hover:text-text-secondary transition-all duration-300 hover:translate-y-1 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-50 rounded-full"
           aria-label="Scroll to next section"
         >
           <svg

@@ -8,9 +8,9 @@ interface BadgeProps {
 }
 
 const variantClasses = {
-  default: 'bg-gray-100 text-gray-800',
-  tech: 'bg-blue-50 text-blue-800 font-mono',
-  outline: 'border border-gray-300 text-gray-700 bg-transparent',
+  default: 'bg-surface-secondary text-text-primary',
+  tech: 'bg-accent/10 text-accent font-mono',
+  outline: 'border border-border text-text-secondary bg-transparent',
 };
 
 const sizeClasses = {

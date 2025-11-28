@@ -26,7 +26,7 @@ export const Heading: React.FC<HeadingProps> = ({
 }) => {
   return (
     <Component
-      className={`text-gray-900 leading-tight ${sizeClasses[size]} ${className}`}
+      className={`text-text-primary leading-tight ${sizeClasses[size]} ${className}`}
     >
       {children}
     </Component>

@@ -5,7 +5,7 @@ import {
   usePortfolioData,
 } from '../../hooks';
 import { portfolioConfig } from '../../config/portfolio';
-import { SocialLinks } from '../ui';
+import { SocialLinks, ThemeToggle } from '../ui';
 
 interface HeaderProps {
   className?: string;
@@ -26,7 +26,7 @@ export const Header: React.FC<HeaderProps> = ({ className = '' }) => {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md z-40 border-b border-gray-100 ${className}`}
+      className={`fixed top-0 left-0 w-full bg-surface-elevated backdrop-blur-md z-40 border-b border-border transition-colors duration-200 ${className}`}
       role="banner"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -46,10 +46,10 @@ export const Header: React.FC<HeaderProps> = ({ className = '' }) => {
                 key={id}
                 href={`#${id}`}
                 onClick={(e) => handleNavClick(e, id)}
-                className={`transition-colors duration-200 font-medium focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-opacity-50 rounded px-2 py-1 ${
+                className={`transition-colors duration-200 font-medium focus:outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-50 rounded px-2 py-1 ${
                   activeSection === id
-                    ? 'text-blue-600 border-b-2 border-blue-600'
-                    : 'text-gray-700 hover:text-gray-900'
+                    ? 'text-accent border-b-2 border-accent'
+                    : 'text-text-secondary hover:text-text-primary'
                 }`}
                 aria-current={activeSection === id ? 'page' : undefined}
                 aria-label={`Navigate to ${label} section`}
@@ -59,11 +59,12 @@ export const Header: React.FC<HeaderProps> = ({ className = '' }) => {
             ))}
             <a
               href={portfolioConfig.social.email.url}
-              className="text-gray-700 hover:text-gray-900 transition-colors duration-200 font-medium focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-opacity-50 rounded px-2 py-1"
+              className="text-text-secondary hover:text-text-primary transition-colors duration-200 font-medium focus:outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-50 rounded px-2 py-1"
               aria-label="Send email"
             >
               ernesto@ernjv.me
             </a>
+            <ThemeToggle />
           </nav>
         </div>
       </div>

@@ -55,7 +55,7 @@ export const SocialLinks: React.FC<SocialLinksProps> = ({
       : 'flex flex-col space-y-4 items-center';
 
   const linkClass =
-    'text-gray-600 hover:text-gray-900 hover:scale-110 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-opacity-50 rounded p-1';
+    'text-text-secondary hover:text-text-primary hover:scale-110 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-50 rounded p-1';
 
   return (
     <div

@@ -60,6 +60,7 @@ The project follows a structured component architecture documented in the ADRs:
 - [ADR-003: Implementation Phases Strategy](./docs/ADR-003-implementation-phases.md)
 - [ADR-004: Centralized Data Management](./docs/ADR-004-centralized-data-management.md)
 - [ADR-005: GitHub Pages Deployment](./docs/ADR-005-github-pages-deployment.md)
+- [ADR-006: Dark Mode Theming](./docs/ADR-006-dark-mode-theming.md)
 
 ---
 

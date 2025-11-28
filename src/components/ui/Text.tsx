@@ -18,9 +18,9 @@ const variantClasses: Record<TextVariant, string> = {
 };
 
 const colorClasses: Record<TextColor, string> = {
-  primary: 'text-gray-900',
-  secondary: 'text-gray-700',
-  muted: 'text-gray-500',
+  primary: 'text-text-primary',
+  secondary: 'text-text-secondary',
+  muted: 'text-text-muted',
 };
 
 export const Text: React.FC<TextProps> = ({

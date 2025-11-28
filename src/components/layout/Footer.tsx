@@ -10,7 +10,7 @@ export const Footer: React.FC<FooterProps> = ({ className = '' }) => {
   const { footer } = usePortfolioData();
 
   return (
-    <footer className={`py-12 mt-24 border-t border-gray-200 ${className}`}>
+    <footer className={`py-12 mt-24 border-t border-border ${className}`}>
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 xl:pr-24">
         {/* Social Links - Only visible on mobile/tablet (hidden on xl+) */}
         <SocialLinks
@@ -20,7 +20,7 @@ export const Footer: React.FC<FooterProps> = ({ className = '' }) => {
         />
 
         <div className="text-center">
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-text-muted">
             Built with{' '}
             {footer.builtWith.map((tech, index) => (
               <span key={tech.name}>
@@ -28,7 +28,7 @@ export const Footer: React.FC<FooterProps> = ({ className = '' }) => {
                   href={tech.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-700 hover:text-gray-900 transition-colors duration-200"
+                  className="text-text-secondary hover:text-text-primary transition-colors duration-200"
                 >
                   {tech.name}
                 </a>
@@ -37,7 +37,7 @@ export const Footer: React.FC<FooterProps> = ({ className = '' }) => {
               </span>
             ))}
           </p>
-          <p className="text-xs text-gray-400 mt-2">{footer.signature}</p>
+          <p className="text-xs text-text-muted mt-2">{footer.signature}</p>
         </div>
       </div>
     </footer>

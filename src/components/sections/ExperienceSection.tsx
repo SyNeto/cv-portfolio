@@ -22,7 +22,7 @@ export const ExperienceSection: React.FC = () => {
               {/* Timeline connector - except for last item */}
               {index !== experiences.length - 1 && (
                 <div className="hidden lg:block relative">
-                  <div className="absolute left-0 top-0 w-px h-8 bg-gray-200 ml-6"></div>
+                  <div className="absolute left-0 top-0 w-px h-8 bg-border ml-6"></div>
                 </div>
               )}
             </div>
