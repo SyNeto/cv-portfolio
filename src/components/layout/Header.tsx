@@ -36,6 +36,11 @@ export const Header: React.FC<HeaderProps> = ({ className = '' }) => {
             <SocialLinks direction="horizontal" iconSize="sm" />
           </div>
 
+          {/* Mobile: Theme Toggle (right side) */}
+          <div className="lg:hidden">
+            <ThemeToggle />
+          </div>
+
           {/* Desktop Navigation */}
           <nav
             className="hidden lg:flex space-x-8 ml-auto"
