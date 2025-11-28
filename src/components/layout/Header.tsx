@@ -5,13 +5,14 @@ import {
   usePortfolioData,
 } from '../../hooks';
 import { portfolioConfig } from '../../config/portfolio';
+import { SocialLinks } from '../ui';
 
 interface HeaderProps {
   className?: string;
 }
 
 export const Header: React.FC<HeaderProps> = ({ className = '' }) => {
-  const { navigation, personal, getAllSectionIds } = usePortfolioData();
+  const { navigation, getAllSectionIds } = usePortfolioData();
   const activeSection = useActiveSection(getAllSectionIds());
   const { scrollToSection } = useSmoothScroll();
 
@@ -30,19 +31,14 @@ export const Header: React.FC<HeaderProps> = ({ className = '' }) => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <div className="flex-shrink-0">
-            <button
-              onClick={() => scrollToSection('hero')}
-              className="text-xl font-semibold text-gray-900 hover:text-gray-700 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-opacity-50 rounded px-2 py-1"
-              aria-label="Go to top of page"
-            >
-              {personal.name}
-            </button>
+          {/* Mobile: Social Links */}
+          <div className="lg:hidden">
+            <SocialLinks direction="horizontal" iconSize="sm" />
           </div>
 
-          {/* Desktop Navigation - Hidden on mobile, shows on lg+ */}
+          {/* Desktop Navigation */}
           <nav
-            className="hidden lg:flex space-x-8"
+            className="hidden lg:flex space-x-8 ml-auto"
             aria-label="Main navigation"
           >
             {navigation.map(({ id, label }) => (
