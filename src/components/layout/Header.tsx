@@ -67,7 +67,7 @@ export const Header: React.FC<HeaderProps> = ({ className = '' }) => {
               className="text-text-secondary hover:text-text-primary transition-colors duration-200 font-medium focus:outline-none focus:ring-2 focus:ring-accent focus:ring-opacity-50 rounded px-2 py-1"
               aria-label="Send email"
             >
-              ernesto@ernjv.me
+              ernjivi@gmail.com
             </a>
             <ThemeToggle />
           </nav>

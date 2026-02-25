@@ -8,7 +8,7 @@ export const portfolioConfig = {
     title: 'I build software that ships',
     greeting: 'Hi, my name is',
     description:
-      'Tech Lead with 11+ years of software development experience, the last 5 focused on technical leadership. Specialized in microservices architecture, e-commerce platforms, and full-stack development. Based in Mexico City.',
+      '"Software engineer" with 11+ years of experience, the last 5 as Tech Lead. Specialized in microservices architecture, e-commerce platforms, and full-stack development. Based in Mexico City.',
   },
 
   // Navigation Configuration
@@ -28,7 +28,7 @@ export const portfolioConfig = {
       label: 'LinkedIn',
     },
     email: {
-      url: 'mailto:ernesto@ernjv.me',
+      url: 'mailto:ernjivi@gmail.com',
       label: 'Email',
     },
   },
@@ -36,8 +36,7 @@ export const portfolioConfig = {
   // About Section Data
   about: {
     description: [
-      "Hello! I'm Ernesto, a software engineer with over 11 years of professional experience building production systems. My journey started back in 2008 as a freelancer, and since then I've gone from writing my first lines of code to leading engineering teams and architecting migrations from monolithic systems to microservices.",
-      "I've spent most of my career working across the full stack, but what really drives me is making things work: whether that's migrating an e-commerce platform to a new architecture, designing systems that need to scale, or figuring out why that one service keeps failing at 3 AM. I care about code that's maintainable, systems that are observable, and teams that ship.",
+      'Hello! I\'m Ernesto, a "software engineer" with over 11 years of professional experience building production systems. My journey started back in 2008 as a freelancer, and since then I\'ve gone from writing my first lines of code to leading engineering teams and architecting migrations from monolithic systems to microservices.',
       "Outside of work, I'm an open source and open hardware enthusiast. I maintain a small electronics workshop at home where I restore 1980s computers, mostly Commodore 64s and their variants. I also experiment with IoT projects and embedded systems. There's something satisfying about debugging a 40-year-old machine that reminds me why I got into this field in the first place.",
     ],
     technologies: [
